@@ -1,0 +1,49 @@
+create table CLIENTE(
+	IDCLIENTE                        int                  not null,
+	NOMBRES                          varchar(50)          null,
+	APELLIDOS                        varchar(50)         null,
+	IDENTIFICACION                   varchar(20)         null,
+	DIRECCION                        varchar(20)         null,
+	TELEFONOMOVIL                    varchar(50)         null,
+	EMAIL                            varchar(30)         null,
+	RELACION_DIFUNTO                 varchar(20)         null,
+	constraint PK_CLIENTE primary key (IDCLIENTE)
+
+)
+
+create table BOVEDA (
+	IDBOVEDA              int                  not null,
+	DESCRIPCION           varchar(80)          null,
+	PRECIO_BOVEDA         numeric(5,2)         null,
+	NUMERO_BOVEDA         int                  not null,
+	UBICACION_BOVEDA      varchar(80)          null,
+	constraint PK_BOVEDA primary key (IDBOVEDA) 
+
+
+)
+
+
+create table VENTABOVEDA (
+	IDBOVEDA             int              not null,
+	IDCLIENTE            int              not null,
+	IDVENTA              int              not null,
+	FECHACOMPRA          datetime         not null,
+	FORMA_PAGO           varchar(80)      null,
+	FECHA_PAGO           datetime         null,
+	DETALLE_CLIENTE      varchar(80)      null,
+	VALORDEVENTA         numeric (5,2)    null,
+	constraint PK_VENTABOVEDA primary key (IDBOVEDA, IDCLIENTE, IDVENTA )
+
+)
+
+create table ABONO(
+	IDVENTA                      int              not null,
+	IDABONO                      int              not null,
+	FECHA_ULTIMO_ABONO           datetime         null,
+	VALORABONO                   numeric(5,2)     null,
+	VALOR_PENDIENTE              numeric(5,2)     null,
+	constraint PK_ABONO primary key (IDVENTA, IDABONO)
+  
+
+)
+
