@@ -1,0 +1,46 @@
+insert into cliente values
+(1,'Juan Jesus','Macias Cedeño','1315779822','La Aurora','0991674421','juan@hotmail.com','Hermano del difunto'),
+insert into cliente values
+(2,'Pedro Alberto','Zambrano Barberan ','1213156689','El Palmar','0982441595','pedro@hotmail.com','Padre del difunto'),
+insert into cliente values
+(3,'Pablo Alejandro','Kohls Aguayo','1313776591','Las Cumbres','0999217561','pablo@hotmail.com','Hijo del difunto'),
+insert into cliente values
+(4,'Jose Carlos','Mejia Alvarez','1313441567','Barrio Jocay','0991234567','jose@hotmail.com','Primo del difunto'),
+insert into cliente values
+(5,'Steven Jonathan','Macias Cevallos','1312967514','La Padrera','0999145623','steven@hotmail.com','Sobrino del difunto');
+
+
+insert into boveda values
+(1,'Boveda de tamaño grande',500 ,50,'La boveda se encuentra en la parte Este del Cementerio'),
+insert into boveda values
+(2,'Boveda de tamaño pequeño',100 ,40,'La boveda se encuentra en la parte Sur del Cementerio'),
+insert into boveda values
+(3,'Boveda de tamaño grande',500 ,30,'La boveda se encuentra en la parte Norte del Cementerio'),
+insert into boveda values
+(4,'Boveda de tamaño pequeño',100 ,20,'La boveda se encuentra en la parte Este del Cementerio'),
+insert into boveda values
+(5,'Boveda de tamaño pequeño',100 ,25,'La boveda se encuentra en la parte Oeste del Cementerio');
+
+insert into VENTABOVEDA values
+(1,1,1,'10-05-2020','Efectivo', '11-05-2020','El cliente cancelo el monto total en efectivo', 500),
+insert into VENTABOVEDA values
+(2,2,2,'15-04-2020','Cheque', '17-04-2020','El cliente deposito un cheque en el banco Pichincha', 100),
+insert into VENTABOVEDA values
+(3,3,3,'05-06-2020','Cheque', '08-06-2020','El cliente deposito un cheque en el banco de Guayaquil',500),
+insert into VENTABOVEDA values
+(4,4,4,'06-01-2020','Transferencia', '09-01-2020','El cliente realizo una transferencia a nuestra cuenta',100),
+insert into VENTABOVEDA values
+(5,5,5,'23-03-2020','Efectivo', '24-03-2020','El cleinte cancelo en efectivo',100);
+
+
+
+insert into ABONO values
+(1,1,'10-05-2020',100,400),
+insert into ABONO values
+(2,2,'15-04-2020',50,50),
+insert into ABONO values
+(3,3,'05-06-2020',200,300),
+insert into ABONO values
+(4,4,'06-01-2020',10,90),
+insert into ABONO values
+(5,5,'23-03-2020',15,85);
